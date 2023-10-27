@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+
+h2 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  color: hsl(71, 73%, 54%);
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+h4 {
+  color: white;
+  font-size: 25px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+p {
+  color: hsl(218, 22%, 67%);
+  font-size: 14px;
+}
+
+span {
+  font-size: 13px;
+  color: hsl(204, 43%, 93%);
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.row1 {
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 8px 8px 0 0;
+  line-height: 27px;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.left-side {
+  background-color: hsl(179, 62%, 43%);
+  width: 50%;
+  padding: 30px;
+  border-radius: 0 0 0 8px;
+}
+
+.left-side p {
+  color: hsl(204, 43%, 93%);
+}
+
+.right-side {
+  background-color: hsla(179, 62%, 43%, 0.7);
+  width: 50%;
+  padding: 30px;
+  border-radius: 0 0 8px 0;
+}
+
+.right-side p {
+  color: hsl(204, 43%, 93%);
+  width: 185px;
+  line-height: 20px;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  padding: 10px 70px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 27px;
+}
+
+
+@media (max-width: 600px) {
+  p {
+    font-size: 13px;
+  }
+  button {
+    padding: 10px 96px;
+  }
+  .row1 {
+    width: 300px;
+  }
+
+  .row1 p {
+    font-size: 13.6px;
+  }
+  .row2 {
+    flex-direction: column;
+    width: 300px;
+  }
+  .left-side,  .right-side {
+    width: 300px;
+  }
+  .left-side {
+    border-radius: 0;
+  }
+  .left-side p {
+    font-size: 15px;
+  }
+
+  .right-side {
+    border-radius: 0 0 8px 8px;
+  }
+  .container {
+    height: 130vh;
+  }
+}
